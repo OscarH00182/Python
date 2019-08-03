@@ -1,0 +1,19 @@
+"""
+    Dequeue:
+    Is an double ended queue, where you can adding and remove elements from
+    either end.         
+"""
+
+import collections
+print("\nDequeue: ")
+DoubleEnded = collections.deque(["Mon","Tue","Wed"])#Create orginal dequeue
+DoubleEnded.append("Thurs")#Adding Thurs to the right(Like a regular Queue)
+print("Appended at Right is: ")
+print(DoubleEnded)#Print entire Dequeue
+
+print("Appended from left is: ")
+DoubleEnded.appendleft("Sun")#Now we add from the left
+print(DoubleEnded)#print dequeue and Sun is on the left
+DoubleEnded.popleft()#Now we pop from the left
+print("Deleting from Left: ")
+print(DoubleEnded)#Sunday is removed!
